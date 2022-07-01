@@ -9,6 +9,9 @@
   background-color: black;
   width: 100vw;
   height: 100vh;
+  row-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .main__grid-container .main__button--screen {
   background-color: black;

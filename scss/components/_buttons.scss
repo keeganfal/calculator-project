@@ -1,19 +1,9 @@
 .main__grid-container {
-    .main__button {
-        &--screen {
-            background-color: greenyellow;
-        }
+    .main__num-button {
+        background-color: grey;
+    }
 
-        &--light {
-            background-color: grey;
-        }
-
-        &--dark {
-            background-color: dark gray;
-        }
-
-        &--orange {
-            background-color: orange;
-        }
+    .main__calc-button {
+        background-color: orange;
     }
 }

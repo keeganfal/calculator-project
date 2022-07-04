@@ -23,19 +23,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: aquamarine;
 }
 .main__grid-container #zero {
   grid-column: span 2;
 }
-.main__grid-container .main__button--screen {
-  background-color: greenyellow;
-}
-.main__grid-container .main__button--light {
+
+.main__grid-container .main__num-button {
   background-color: grey;
 }
-.main__grid-container .main__button--dark {
-  background-color: dark gray;
-}
-.main__grid-container .main__button--orange {
+.main__grid-container .main__calc-button {
   background-color: orange;
 }

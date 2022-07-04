@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./scss/main.css">
     <script src="https://kit.fontawesome.com/2c71b445d4.js" crossorigin="anonymous"></script>
     <title>Calculator</title>
 </head>
 <body>
     <main class="main__grid-container">
-
-        <button class="main__button main__button--screen" id="screen">Screen</button>
+        <div class="main__screen" id="screen">
+            <h1 class="main__display"></h1>
+        </div>
 
         <button class="main__button main__button--light" id="ac-button"><i class="fa-solid fa-a"></i><i class="fa-solid fa-c"></i></button>
         <button class="main__button main__button--light" id="plus-minus-button"><i class="fa-solid fa-plus-minus"></i></button>
@@ -40,3 +41,5 @@
     </main>
 </body>
 </html>
+
+<script src="./script.js"></script>

@@ -1,0 +1,24 @@
+.main__grid-container {
+    .main__screen {
+        .main__display {
+            color: white;
+        }
+    }
+    .main__button {
+        &--screen {
+            background-color: black;
+        }
+
+        &--light {
+            background-color: grey;
+        }
+
+        &--dark {
+            background-color: dark gray;
+        }
+
+        &--orange {
+            background-color: orange;
+        }
+    }
+}

@@ -1,8 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} 
 
 .main__grid-container {
     display: grid;
@@ -12,23 +7,7 @@
     row-gap: 5px;
     column-gap: 5px;
 
-    .main__button {
-        &--screen {
-            background-color: black;
-        }
-
-        &--light {
-            background-color: grey;
-        }
-
-        &--dark {
-            background-color: dark gray;
-        }
-
-        &--orange {
-            background-color: orange;
-        }
-    }
+    padding: 1vh;
 
     #screen {
         grid-column-start: -2;
@@ -189,5 +168,4 @@
         grid-row-start: 7;
         grid-row-end: 8;
     }
-
 }

@@ -12,18 +12,7 @@
   row-gap: 5px;
   -moz-column-gap: 5px;
        column-gap: 5px;
-}
-.main__grid-container .main__button--screen {
-  background-color: black;
-}
-.main__grid-container .main__button--light {
-  background-color: grey;
-}
-.main__grid-container .main__button--dark {
-  background-color: dark gray;
-}
-.main__grid-container .main__button--orange {
-  background-color: orange;
+  padding: 1vh;
 }
 .main__grid-container #screen {
   grid-column-start: -2;
@@ -144,4 +133,20 @@
   grid-column-end: 4;
   grid-row-start: 7;
   grid-row-end: 8;
+}
+
+.main__grid-container .main__screen .main__display {
+  color: white;
+}
+.main__grid-container .main__button--screen {
+  background-color: black;
+}
+.main__grid-container .main__button--light {
+  background-color: grey;
+}
+.main__grid-container .main__button--dark {
+  background-color: dark gray;
+}
+.main__grid-container .main__button--orange {
+  background-color: orange;
 }

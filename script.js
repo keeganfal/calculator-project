@@ -5,6 +5,7 @@ const calcButtons = document.querySelectorAll(".main__calc-button")
 
 currentNum = "";
 
+
 const handleNumbers = (event) =>{
     switch (event.target.id) {
       case "one":

@@ -23,7 +23,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background-color: lightgrey;
+}
+.main__grid-container #ac-button {
+  grid-column: span 3;
 }
 .main__grid-container #zero {
   grid-column: span 2;

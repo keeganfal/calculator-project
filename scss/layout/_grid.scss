@@ -14,14 +14,17 @@
     #screen {
         grid-column-start: 1;
         grid-column-end: -1;
-
         grid-row: span 3;
 
         display: flex;
         justify-content: center;
         align-items: center;
 
-        background-color: aquamarine;
+        background-color: lightgrey;
+    }
+
+    #ac-button {
+        grid-column: span 3;
     }
 
     #zero {

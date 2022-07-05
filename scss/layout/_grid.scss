@@ -1,4 +1,9 @@
 
+* {
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
 .main__grid-container {
     display: grid;
     background-color: black;
@@ -21,10 +26,10 @@
         justify-content: space-around;
         align-items: center;
 
-        background-color: lightgrey;
+        background-color: $light-gray;
 
         .main__display-history {
-            color: gray;
+            color: $dark-gray;
         }
     }
 
@@ -34,5 +39,12 @@
 
     #zero {
         grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main__grid-container {
+        padding-left: 30vh;
+        padding-right: 30vh;
     }
 }

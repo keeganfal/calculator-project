@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+* {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
 .main__grid-container {
   display: grid;
   background-color: black;
@@ -24,10 +29,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: lightgrey;
+  background-color: #45625D;
 }
 .main__grid-container #screen .main__display-history {
-  color: gray;
+  color: #7EC384;
 }
 .main__grid-container #ac-button {
   grid-column: span 3;
@@ -36,15 +41,21 @@
   grid-column: span 2;
 }
 
+@media screen and (min-width: 768px) {
+  .main__grid-container {
+    padding-left: 30vh;
+    padding-right: 30vh;
+  }
+}
 .main__grid-container .main__num-button {
-  background-color: grey;
+  background-color: #7EC384;
 }
 .main__grid-container .main__num-button--light {
-  background-color: lightgray;
+  background-color: #45625D;
 }
 .main__grid-container .main__operator-button {
-  background-color: orange;
+  background-color: #3F7856;
 }
 .main__grid-container .main__operator-button--light {
-  background-color: lightgray;
+  background-color: #45625D;
 }

@@ -1,17 +1,17 @@
 .main__grid-container {
     .main__num-button {
-        background-color: grey;
+        background-color: $dark-gray;
 
         &--light{
-            background-color: lightgray;
+            background-color: $light-gray;
         }
     }
 
     .main__operator-button {
-        background-color: orange;
+        background-color: $orange;
 
         &--light{
-            background-color: lightgray;
+            background-color: $light-gray;
         }
     }
 }

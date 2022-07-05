@@ -21,9 +21,13 @@
   grid-column-end: -1;
   grid-row: span 2;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   background-color: lightgrey;
+}
+.main__grid-container #screen .main__display-history {
+  color: gray;
 }
 .main__grid-container #ac-button {
   grid-column: span 3;

@@ -3,8 +3,6 @@ const displayOutput = document.querySelector(".main__display-output");
 const numButtons = document.querySelectorAll(".main__num-button")
 const calcButtons = document.querySelectorAll(".main__operator-button")
 
-currentNum = "";
-
 const getOutput = () => { 
     return displayOutput.innerHTML;
 };
@@ -13,75 +11,90 @@ const printOutput = (num) => {
     return displayOutput.innerHTML = num;
 };
 
+const getHistory = () => { 
+    return displayHistory.innerHTML;
+};
+
+const printHistory = (num) => { 
+    return displayHistory.innerHTML = num;
+};
 
 const handleNumbersClick = (event) =>{
+    let output = getOutput();
     switch (event.target.id) {
       case "one":
         console.log("one");
-        displayOutput.innerHTML += "1";
+        printOutput(output+"1");
         break;
       case "two":
         console.log("two");
-        displayOutput.innerHTML += "2";
+        printOutput(output+"2");
         break;
       case "three":
         console.log("3");
-        displayOutput.innerHTML += "3";
+        printOutput(output+"3");
         break;
       case "four":
         console.log("four");
-        display.innerHTML += "4";
+        printOutput(output+"4");
         break;
       case "five":
         console.log("five");
-        displayOutput.innerHTML += "5";
+        printOutput(output+"5");
         break;
       case "six":
         console.log("six");
-        displayOutput.innerHTML += "6";
+        printOutput(output+"6");
         break;
       case "seven":
         console.log("seven");
-        displayOutput.innerHTML += "7";
+        printOutput(output+"7");
         break;
       case "eight":
         console.log("eight");
-        displayOutput.innerHTML += "8";
+        printOutput(output+"8");
         break;
       case "nine":
         console.log("nine");
-        displayOutput.innerHTML += "9";
+        printOutput(output+"9");
         break;
       case "zero":
         console.log("zero");
-        displayOutput.innerHTML += "0";
+        printOutput(output+"0");
         break;
     }
 }
 
 const handleOperatorClick = (event) =>{
-    switch (event.target.id) {
-        case "ac-button":
-            console.log("ac was pressed");
-            displayOutput.innerHTML = ""
-            displayHistory.innerHTML = ""
-            break;
-        case "divide-button":
-            console.log("divide was pressed");
-            displayOutput.innerHTML = "÷"
-            break;
-        case "multiply-button":
-            console.log("multiply was pressed");
-            displayOutput.innerHTML = "x"
-            break;
-        case "minus-button":
-            console.log("minus was pressed");
-            displayOutput.innerHTML = "-"
-            break;
-        case "plus-button":
-            console.log("plus was pressed");
-            displayOutput.innerHTML = "+"
-            break;
+    
+    if (event.target.id == "ac-button") {
+        console.log("ac was pressed");
+        displayOutput.innerHTML = "1";
+        displayHistory.innerHTML = "3";
+    }
+
+    else if (event.target.id == "divide-button") {
+        console.log("divide was pressed");
+        displayOutput.innerHTML = "÷"
+    }
+
+    else if (event.target.id == "multiply-button") {
+        console.log("multiply was pressed");
+        displayOutput.innerHTML = "x"
+    }
+
+    else if (event.target.id == "minus-button") {
+        console.log("minus was pressed");
+        displayOutput.innerHTML = "-"
+    }
+
+    else if (event.target.id == "plus-button") {
+        console.log("plus was pressed");
+        displayOutput.innerHTML = "+"
+    }
+
+    else {
+        console.log("Error")
     }
 }
 

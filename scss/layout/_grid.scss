@@ -17,10 +17,15 @@
         grid-row: span 2;
 
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
 
         background-color: lightgrey;
+
+        .main__display-history {
+            color: gray;
+        }
     }
 
     #ac-button {

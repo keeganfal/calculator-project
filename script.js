@@ -24,22 +24,22 @@ const evaluate = (history) => {
     if (history.includes("÷")) {
         console.log("divide was sorted")
         const myArray = history.split("÷");
-        return displayOutput.innerHTML = myArray[0]/myArray[1];
+        return displayOutput.innerHTML = parseFloat(myArray[0])/parseFloat(myArray[1]);
     }
     else if (history.includes("x")) {
         console.log("divide was sorted")
         const myArray = history.split("x");
-        return displayOutput.innerHTML = myArray[0]*myArray[1];
+        return displayOutput.innerHTML = parseFloat(myArray[0])*parseFloat(myArray[1]);
     }
     else if (history.includes("+")) {
         console.log("divide was sorted")
         const myArray = history.split("+");
-        return displayOutput.innerHTML = myArray[0]+myArray[1];
+        return displayOutput.innerHTML = parseFloat(myArray[0])+parseFloat(myArray[1]);
     }
     else if (history.includes("-")) {
         console.log("divide was sorted")
         const myArray = history.split("-");
-        return displayOutput.innerHTML = myArray[0]-myArray[1];
+        return displayOutput.innerHTML = parseFloat(myArray[0])-parseFloat(myArray[1]);
     }
 };
 
@@ -55,7 +55,7 @@ const handleNumbersClick = (event) =>{
             printOutput(output+"2");
             break;
         case "three":
-            console.log("3");
+            console.log("three");
             printOutput(output+"3");
             break;
         case "four":
@@ -87,9 +87,15 @@ const handleNumbersClick = (event) =>{
             printOutput(output+"0");
             break;
         case "dot":
-            console.log("dot");
-            printOutput(output+".");
-            break;
+            // let dotIndex = getOutput().length;
+            // console.log(getOutput().charAt(dotIndex -1))
+            if(getOutput().includes(".")){
+                break
+            }
+            else {
+                printOutput(output+".");
+                break;
+            }
     }
 }
 

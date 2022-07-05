@@ -66,35 +66,50 @@ const handleNumbersClick = (event) =>{
 }
 
 const handleOperatorClick = (event) =>{
-    
+
     if (event.target.id == "ac-button") {
         console.log("ac was pressed");
-        displayOutput.innerHTML = "1";
-        displayHistory.innerHTML = "3";
+        printHistory("");
+        printOutput("");
     }
 
-    else if (event.target.id == "divide-button") {
-        console.log("divide was pressed");
-        displayOutput.innerHTML = "÷"
+    let output = getOutput();
+    let history = getHistory();
+
+    if (event.target.id == "equal-button") {
+        console.log("equal was pressed");
+        displayHistory = history + output;
+        displayOutput.innerHTML = "EVAL History"
     }
 
-    else if (event.target.id == "multiply-button") {
-        console.log("multiply was pressed");
-        displayOutput.innerHTML = "x"
-    }
-
-    else if (event.target.id == "minus-button") {
-        console.log("minus was pressed");
-        displayOutput.innerHTML = "-"
-    }
-
-    else if (event.target.id == "plus-button") {
-        console.log("plus was pressed");
-        displayOutput.innerHTML = "+"
-    }
-
-    else {
-        console.log("Error")
+    if (output != "") {
+        if (event.target.id == "divide-button") {
+            console.log("divide was pressed");
+            printHistory(output+"/");
+            printOutput("")
+        }
+    
+        else if (event.target.id == "multiply-button") {
+            console.log("multiply was pressed");
+            printHistory(output+"x");
+            printOutput("")
+        }
+    
+        else if (event.target.id == "minus-button") {
+            console.log("minus was pressed");
+            printHistory(output+"-");
+            printOutput("")
+        }
+    
+        else if (event.target.id == "plus-button") {
+            console.log("plus was pressed");
+            printHistory(output+"+");
+            printOutput("")
+        }
+    
+        else {
+            console.log("Error")
+        }
     }
 }
 

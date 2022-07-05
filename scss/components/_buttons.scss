@@ -3,7 +3,11 @@
         background-color: grey;
     }
 
-    .main__calc-button {
+    .main__operator-button {
         background-color: orange;
+
+        &--light{
+            background-color: lightgray;
+        }
     }
 }

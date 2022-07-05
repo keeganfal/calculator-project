@@ -39,6 +39,9 @@
 .main__grid-container .main__num-button {
   background-color: grey;
 }
+.main__grid-container .main__num-button--light {
+  background-color: lightgray;
+}
 .main__grid-container .main__operator-button {
   background-color: orange;
 }

@@ -1,6 +1,10 @@
 .main__grid-container {
     .main__num-button {
         background-color: grey;
+
+        &--light{
+            background-color: lightgray;
+        }
     }
 
     .main__operator-button {

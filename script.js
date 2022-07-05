@@ -46,46 +46,50 @@ const evaluate = (history) => {
 const handleNumbersClick = (event) =>{
     let output = getOutput();
     switch (event.target.id) {
-      case "one":
-        console.log("one");
-        printOutput(output+"1");
-        break;
-      case "two":
-        console.log("two");
-        printOutput(output+"2");
-        break;
-      case "three":
-        console.log("3");
-        printOutput(output+"3");
-        break;
-      case "four":
-        console.log("four");
-        printOutput(output+"4");
-        break;
-      case "five":
-        console.log("five");
-        printOutput(output+"5");
-        break;
-      case "six":
-        console.log("six");
-        printOutput(output+"6");
-        break;
-      case "seven":
-        console.log("seven");
-        printOutput(output+"7");
-        break;
-      case "eight":
-        console.log("eight");
-        printOutput(output+"8");
-        break;
-      case "nine":
-        console.log("nine");
-        printOutput(output+"9");
-        break;
-      case "zero":
-        console.log("zero");
-        printOutput(output+"0");
-        break;
+        case "one":
+            console.log("one");
+            printOutput(output+"1");
+            break;
+        case "two":
+            console.log("two");
+            printOutput(output+"2");
+            break;
+        case "three":
+            console.log("3");
+            printOutput(output+"3");
+            break;
+        case "four":
+            console.log("four");
+            printOutput(output+"4");
+            break;
+        case "five":
+            console.log("five");
+            printOutput(output+"5");
+            break;
+        case "six":
+            console.log("six");
+            printOutput(output+"6");
+            break;
+        case "seven":
+            console.log("seven");
+            printOutput(output+"7");
+            break;
+        case "eight":
+            console.log("eight");
+            printOutput(output+"8");
+            break;
+        case "nine":
+            console.log("nine");
+            printOutput(output+"9");
+            break;
+        case "zero":
+            console.log("zero");
+            printOutput(output+"0");
+            break;
+        case "dot":
+            console.log("dot");
+            printOutput(output+".");
+            break;
     }
 }
 

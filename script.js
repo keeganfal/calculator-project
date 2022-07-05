@@ -19,6 +19,15 @@ const printHistory = (num) => {
     return displayHistory.innerHTML = num;
 };
 
+const evaluate = (history) => { 
+    console.log(history);
+    if (history.includes("/")) {
+        console.log("divide was sorted")
+        const myArray = text.split("/");
+        return displayOutput.innerHTML = "done";
+    }
+};
+
 const handleNumbersClick = (event) =>{
     let output = getOutput();
     switch (event.target.id) {
@@ -76,13 +85,14 @@ const handleOperatorClick = (event) =>{
     let output = getOutput();
     let history = getHistory();
 
-    if (event.target.id == "equal-button") {
-        console.log("equal was pressed");
-        displayHistory = history + output;
-        displayOutput.innerHTML = "EVAL History"
-    }
-
     if (output != "") {
+        
+        if (event.target.id == "equal-button") {
+            console.log("equal was pressed");
+            printHistory(history + output);
+            evaluate(history + output)
+        }
+
         if (event.target.id == "divide-button") {
             console.log("divide was pressed");
             printHistory(output+"/");

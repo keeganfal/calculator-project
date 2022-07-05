@@ -21,10 +21,25 @@ const printHistory = (num) => {
 
 const evaluate = (history) => { 
     console.log(history);
-    if (history.includes("/")) {
+    if (history.includes("÷")) {
         console.log("divide was sorted")
-        const myArray = text.split("/");
-        return displayOutput.innerHTML = "done";
+        const myArray = history.split("÷");
+        return displayOutput.innerHTML = myArray[0]/myArray[1];
+    }
+    else if (history.includes("x")) {
+        console.log("divide was sorted")
+        const myArray = history.split("x");
+        return displayOutput.innerHTML = myArray[0]*myArray[1];
+    }
+    else if (history.includes("+")) {
+        console.log("divide was sorted")
+        const myArray = history.split("+");
+        return displayOutput.innerHTML = myArray[0]+myArray[1];
+    }
+    else if (history.includes("-")) {
+        console.log("divide was sorted")
+        const myArray = history.split("-");
+        return displayOutput.innerHTML = myArray[0]-myArray[1];
     }
 };
 
@@ -95,7 +110,7 @@ const handleOperatorClick = (event) =>{
 
         if (event.target.id == "divide-button") {
             console.log("divide was pressed");
-            printHistory(output+"/");
+            printHistory(output+"÷");
             printOutput("")
         }
     
